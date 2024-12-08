@@ -14,7 +14,7 @@ class TestMagazine:
         magazine_2 = Magazine("AD", "Architecture")
 
         assert magazine_1.name == "Vogue"
-        assert magazine_2.name == "AD"
+        assert magazine_2.name == "AD" 
 
     def test_name_is_mutable_string(self):
         """magazine name is of type str and can change"""

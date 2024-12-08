@@ -9,7 +9,7 @@ class TestArticle:
     """Article in many_to_many.py"""
 
     def test_has_title(self):
-        """Article is initialized with a title"""
+        """Article is initialized with a title""" 
         author = Author("Carry Bradshaw")
         magazine = Magazine("Vogue", "Fashion")
         article_1 = Article(author, magazine, "How to wear a tutu with style")
@@ -25,8 +25,8 @@ class TestArticle:
         article_1 = Article(author, magazine, "How to wear a tutu with style")
 
         # comment out the next two lines if using Exceptions
-        article_1.title = 500
-        assert article_1.title == "How to wear a tutu with style"
+        # article_1.title = 500
+        # assert article_1.title == "How to wear a tutu with style"
         
         assert isinstance(article_1.title, str)
 
